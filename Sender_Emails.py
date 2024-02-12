@@ -6,6 +6,7 @@ from email.header import Header
 def send_email(recipients_emails: list, msg_text: str):
     sender = ''
     password = ''
+    # NEED TYPING LOGIN AND PASSWORD
 
     msg = MIMEText(f'{msg_text}', 'plain', 'utf-8')
     msg['Subject'] = Header('Важно!!!', 'utf-8')
@@ -26,7 +27,7 @@ def send_email(recipients_emails: list, msg_text: str):
 def main():
     
     send_email(recipients_emails = [''], msg_text = (' '))
-
+# NEED TYPE RECIPIENTS EMAILS AND MESSAGE TEXT 
 
 
 if __name__ == '__main__':
